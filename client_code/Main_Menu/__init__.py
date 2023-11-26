@@ -11,3 +11,12 @@ class Main_Menu(Main_MenuTemplate):
   def button_4_click(self, **event_args):
     """This method is called when the button is clicked"""
     pass
+
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Main_Menu.ORDER_NOW')
+    pass
