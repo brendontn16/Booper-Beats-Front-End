@@ -1,14 +1,19 @@
-from ._anvil_designer import Create_A_PizzaTemplate
+from ._anvil_designer import SpecialsTemplate
 from anvil import *
 
-class Create_A_Pizza(Create_A_PizzaTemplate):
+class Specials(SpecialsTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
 
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Main_Menu.ORDER_NOW.Create_A_Pizza')
+    pass
+
   def button_11_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('Main_Menu.ORDER_NOW')
+    open_form('Main_Menu')
     pass
