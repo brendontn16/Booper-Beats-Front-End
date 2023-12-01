@@ -85,3 +85,8 @@ components:
   properties: {text: '', icon: 'fa:shopping-cart'}
   type: Button
   layout_properties: {slot: nav-right}
+- name: back
+  properties: {text: button_11}
+  type: Button
+  layout_properties: {slot: sidebar}
+  event_bindings: {click: back_click}
