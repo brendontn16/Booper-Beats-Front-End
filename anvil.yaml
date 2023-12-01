@@ -1,5 +1,29 @@
 allow_embedding: false
 package_name: Classic_2
+db_schema:
+  foodmenu:
+    client: none
+    server: full
+    columns:
+    - name: Item Type
+      admin_ui: {order: 0, width: 98}
+      type: string
+    - name: Item Part
+      admin_ui: {order: 1, width: 149}
+      type: string
+    - name: Item Key
+      admin_ui: {order: -1, width: 82}
+      type: number
+    - name: Item Part Type
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: Ingredient Name
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: Cost
+      admin_ui: {width: 200, order: 4}
+      type: number
+    title: FoodMenu
 startup: {type: form, module: Main_Menu}
 name: Classic 2
 startup_form: null
