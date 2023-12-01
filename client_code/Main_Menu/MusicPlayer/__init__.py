@@ -13,4 +13,9 @@ class MusicPlayer(MusicPlayerTemplate):
     open_form('Main_Menu.ORDER_NOW.Create_A_Pizza')
     pass
 
+  def button_11_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Main_Menu')
+    pass
+
  
