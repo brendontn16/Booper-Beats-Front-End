@@ -39,6 +39,7 @@ components:
       properties: {text: button_1}
       type: Button
       layout_properties: {grid_position: 'GSROXV,ZNPOPX ZUIWXS,NIORXI'}
+      event_bindings: {click: button_1_click}
     - name: button_4
       properties: {text: button_4}
       type: Button
@@ -84,8 +85,3 @@ components:
   properties: {text: '', icon: 'fa:shopping-cart'}
   type: Button
   layout_properties: {slot: nav-right}
-- name: button_11
-  properties: {text: BACK, bold: true}
-  type: Button
-  layout_properties: {slot: sidebar}
-  event_bindings: {click: button_11_click}
