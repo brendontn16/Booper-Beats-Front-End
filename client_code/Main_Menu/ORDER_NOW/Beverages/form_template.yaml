@@ -70,3 +70,8 @@ components:
   properties: {text: '', icon: 'fa:shopping-cart'}
   type: Button
   layout_properties: {slot: nav-right}
+- name: button_11_copy
+  properties: {text: BACK, bold: true}
+  type: Button
+  layout_properties: {slot: sidebar}
+  event_bindings: {click: button_11_click}

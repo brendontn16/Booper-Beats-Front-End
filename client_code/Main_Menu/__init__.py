@@ -10,6 +10,7 @@ class Main_Menu(Main_MenuTemplate):
 
   def button_4_click(self, **event_args):
     """This method is called when the button is clicked"""
+    open_form('Main_Menu.Specials')
     pass
 
   def button_5_click(self, **event_args):
