@@ -16,6 +16,3 @@ class MusicPlayer(MusicPlayerTemplate):
     """This method is called when the button is clicked"""
     open_form('Main_Menu')
     pass
-
-
- 
