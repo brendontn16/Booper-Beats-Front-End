@@ -12,6 +12,7 @@ class MusicPlayer(MusicPlayerTemplate):
     """This method is called when the button is clicked"""
     open_form('Main_Menu.ORDER_NOW.Create_A_Pizza')
     pass
+  
 
   def slider_1_change(self, **event_args):
     self.label_4.text = self.slider_1.level
