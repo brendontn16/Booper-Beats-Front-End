@@ -13,7 +13,8 @@ class Main_Menu(Main_MenuTemplate):
     pass
 
   def button_5_click(self, **event_args):
-    """This method is called when the button is clicked"""
+    """This method is called when the button is clicked """
+    open_form('Main_Menu.MusicPlayer')
     pass
 
   def button_3_click(self, **event_args):
