@@ -10,7 +10,7 @@ class MusicPlayer(MusicPlayerTemplate):
         result = anvil.server.call('play_preselected_playlist', self.spotify, "spotify:playlist:7Gk8MHzbGL1dyrEpCM6jgB", shuffle=True)
         self.label_1.text = result
 
-    def button_2_click(self, **event_args):
+    def button_11_click(self, **event_args):
         result = anvil.server.call('play_preselected_playlist', self.spotify, "spotify:playlist:3P2XUd8YlIQYCA6rECPGeN", shuffle=True)
         self.label_1.text = result
 
