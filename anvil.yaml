@@ -38,15 +38,35 @@ db_schema:
       admin_ui: {order: 2, width: 117}
       type: string
     - name: Specific Item
-      admin_ui: {order: 3, width: 169}
+      admin_ui: {order: 3, width: 130}
       type: string
     - name: Description
-      admin_ui: {width: 200, order: 4}
+      admin_ui: {order: 4, width: 111}
       type: string
     - name: Extra Cost
-      admin_ui: {width: 200, order: 5}
+      admin_ui: {order: 5, width: 84}
       type: number
     title: FullMenu
+  pricemenu:
+    client: none
+    server: full
+    columns:
+    - name: ItemPrice Key
+      admin_ui: {order: 0, width: 107}
+      type: number
+    - name: Menu Type
+      admin_ui: {order: 1, width: 89}
+      type: string
+    - name: Description
+      admin_ui: {order: 2, width: 117}
+      type: string
+    - name: Price
+      admin_ui: {width: 51, order: 3}
+      type: number
+    - name: Food Item Type
+      admin_ui: {order: 1.5, width: 117}
+      type: string
+    title: PriceMenu
 startup: {type: form, module: Main_Menu}
 name: Classic 2
 startup_form: null
