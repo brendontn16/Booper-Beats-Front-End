@@ -1,29 +1,34 @@
 allow_embedding: false
 package_name: Classic_2
 db_schema:
-  foodmenu:
+  customfoodmenu:
     client: none
     server: full
     columns:
-    - name: Item Type
-      admin_ui: {order: 0, width: 98}
+    - name: Food Type
+      admin_ui: {order: 0, width: 93}
       type: string
-    - name: Item Part
-      admin_ui: {order: 1, width: 149}
+    - name: Ingredient Layer
+      admin_ui: {order: 1, width: 153}
       type: string
     - name: Item Key
-      admin_ui: {order: -1, width: 82}
+      admin_ui: {order: -1, width: 76}
       type: number
-    - name: Item Part Type
-      admin_ui: {width: 200, order: 2}
+    - name: Ingredient Type
+      admin_ui: {order: 2, width: 137}
       type: string
     - name: Ingredient Name
-      admin_ui: {width: 200, order: 3}
+      admin_ui: {order: 3, width: 127}
       type: string
     - name: Cost
-      admin_ui: {width: 200, order: 4}
+      admin_ui: {order: 4, width: 122}
       type: number
-    title: FoodMenu
+    title: CustomFoodMenu
+  fullmenu:
+    client: none
+    server: full
+    columns: []
+    title: FullMenu
 startup: {type: form, module: Main_Menu}
 name: Classic 2
 startup_form: null
