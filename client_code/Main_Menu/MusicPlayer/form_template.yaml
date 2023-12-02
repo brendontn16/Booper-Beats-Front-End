@@ -18,18 +18,10 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'ESBNME,RQCNHN XGKOSP,YMIKZJ'}
     components:
-    - name: more_from_artist
-      properties: {}
-      type: Label
-      layout_properties: {grid_position: 'EJEMON,LFHRTP'}
-    - name: label_3
-      properties: {}
-      type: Label
-      layout_properties: {grid_position: 'EJEMON,YUNKKF'}
-    - name: label_4
-      properties: {}
-      type: Label
-      layout_properties: {grid_position: 'EJEMON,OIFQRI'}
+    - name: button_11
+      properties: {text: button_11}
+      type: Button
+      layout_properties: {grid_position: 'DOFOGR,ODRZQS'}
   - name: card_1
     properties: {role: card, col_widths: '{"ZNPOPX":20,"IOTWOQ":40,"SDECZS":30,"SBPHFZ":30,"WNYLJU":30,"BIAXRL":30}'}
     type: ColumnPanel
