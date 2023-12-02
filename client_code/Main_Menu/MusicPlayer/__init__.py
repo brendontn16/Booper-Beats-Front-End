@@ -1,5 +1,6 @@
 from ._anvil_designer import MusicPlayerTemplate
 from anvil import *
+import anvil.server
 
 class MusicPlayer(MusicPlayerTemplate):
   def __init__(self, **properties):

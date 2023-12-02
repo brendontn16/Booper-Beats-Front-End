@@ -1,5 +1,6 @@
 from ._anvil_designer import BeveragesTemplate
 from anvil import *
+import anvil.server
 
 class Beverages(BeveragesTemplate):
   def __init__(self, **properties):
