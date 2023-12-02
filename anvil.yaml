@@ -27,7 +27,25 @@ db_schema:
   fullmenu:
     client: none
     server: full
-    columns: []
+    columns:
+    - name: Food Item Key
+      admin_ui: {order: 0, width: 110}
+      type: number
+    - name: Menu Type
+      admin_ui: {order: 1, width: 89}
+      type: string
+    - name: Food Item Type
+      admin_ui: {order: 2, width: 117}
+      type: string
+    - name: Specific Item
+      admin_ui: {order: 3, width: 169}
+      type: string
+    - name: Description
+      admin_ui: {width: 200, order: 4}
+      type: string
+    - name: Extra Cost
+      admin_ui: {width: 200, order: 5}
+      type: number
     title: FullMenu
 startup: {type: form, module: Main_Menu}
 name: Classic 2
