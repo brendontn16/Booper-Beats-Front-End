@@ -18,11 +18,19 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'ESBNME,RQCNHN XGKOSP,YMIKZJ'}
     components:
-    - name: button_11
-      properties: {text: button_11, align: left, icon_align: left, enabled: true,
-        spacing_above: none, spacing_below: none}
+    - name: button_playlist1
+      properties: {text: Playlist1, align: full}
       type: Button
-      layout_properties: {grid_position: 'RWZNGW,TAVVZS', full_width_row: false}
+      layout_properties: {grid_position: 'ZHZPGJ,OQMOQC'}
+      event_bindings: {click: button_1_click}
+    - name: button_playlist2
+      properties: {text: Playlist2, align: full}
+      type: Button
+      layout_properties: {grid_position: 'GQPCSM,RQULUO'}
+    - name: button_playlist3
+      properties: {text: Playlist3, align: full}
+      type: Button
+      layout_properties: {grid_position: 'BCPFKB,PVGFDB'}
   - name: card_1
     properties: {role: card, col_widths: '{"ZNPOPX":20,"IOTWOQ":40,"SDECZS":30,"SBPHFZ":30,"WNYLJU":30,"BIAXRL":30}'}
     type: ColumnPanel
@@ -58,15 +66,15 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'XQCBOA,JSNXPF'}
     components:
-    - name: button_8
+    - name: button_previous_click
       properties: {text: '', icon: 'fa:fast-backward'}
       type: Button
       layout_properties: {grid_position: 'PTNANP,EPXBKD'}
-    - name: button_9
-      properties: {text: '', icon: 'fa:play-circle'}
+    - name: button_play_pause_click
+      properties: {text: '', icon: 'fa:play-circle', align: center}
       type: Button
       layout_properties: {grid_position: 'PTNANP,IENXGN'}
-    - name: button_10
+    - name: button_next_click
       properties: {text: '', icon: 'fa:fast-forward'}
       type: Button
       layout_properties: {grid_position: 'PTNANP,MZCWGA'}
