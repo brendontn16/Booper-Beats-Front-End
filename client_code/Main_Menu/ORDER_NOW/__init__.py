@@ -4,6 +4,11 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
+import anvil.tables as tables
+import anvil.tables.query as q
+from anvil.tables import app_tables
+import anvil.server
+
 class ORDER_NOW(ORDER_NOWTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
