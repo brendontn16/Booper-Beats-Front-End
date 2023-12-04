@@ -3,13 +3,14 @@ import anvil.server
 
 class MusicPlayer(MusicPlayerTemplate):
 
-    def __init__(self, **properties):
-        self.init_components(**properties)
+  def __init__(self, **properties):
+    self.init_components(**properties)
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('Main_Menu.ORDER_NOW.Create_A_Pizza')
     pass
+    
   def back_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('Main_Menu')
