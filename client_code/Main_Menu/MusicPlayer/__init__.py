@@ -1,5 +1,5 @@
 from anvil import *
-import anvil.server
+import Image, anvil.server
 
 class MusicPlayer(MusicPlayerTemplate):
 
