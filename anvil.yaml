@@ -80,10 +80,14 @@ db_schema:
     - name: Total Cost
       admin_ui: {order: 7, width: 84}
       type: number
-    - name: Item ordered
-      admin_ui: {width: 200, order: 6}
+    - name: Item Price
+      admin_ui: {order: 6, width: 200}
       type: link_single
       target: pricemenu
+    - name: Item Ordered
+      admin_ui: {order: 3, width: 200}
+      type: link_single
+      target: fullmenu
     title: Order Reciept
 startup: {type: form, module: Main_Menu}
 name: Classic 2
