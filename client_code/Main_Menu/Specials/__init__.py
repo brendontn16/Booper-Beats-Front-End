@@ -1,5 +1,6 @@
 from ._anvil_designer import SpecialsTemplate
 from anvil import *
+import anvil.server
 
 class Specials(SpecialsTemplate):
   def __init__(self, **properties):

@@ -1,5 +1,6 @@
 from ._anvil_designer import ORDER_NOWTemplate
 from anvil import *
+import anvil.server
 
 class ORDER_NOW(ORDER_NOWTemplate):
   def __init__(self, **properties):
