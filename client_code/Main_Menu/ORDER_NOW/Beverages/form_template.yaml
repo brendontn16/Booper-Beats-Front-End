@@ -8,11 +8,15 @@ components:
   name: content_panel
   layout_properties: {slot: default}
   components:
-  - name: card_1
+  - name: drink_menu_old
     properties: {role: card, col_widths: '{}'}
     type: ColumnPanel
     layout_properties: {grid_position: 'CLLZJY,GGMIIM'}
     components: []
+  - name: drink_menu
+    properties: {background: '', foreground: '', role: null}
+    type: GridPanel
+    layout_properties: {grid_position: 'FOPCVN,WGXNTS'}
   - name: card_3
     properties: {role: card}
     type: ColumnPanel
