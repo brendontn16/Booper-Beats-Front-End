@@ -6,6 +6,38 @@ class MusicPlayer(MusicPlayerTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
+  
+  def card_6_hide(self, **event_args):
+    """This method is called when the column panel is removed from the screen"""
+    self.card_6.visible = False
+    pass
+
+  def card_6_show(self, **event_args):
+    self.card_6.visible = True
+    """This method is called when the column panel is shown on the screen"""
+    pass
+
+  def card_1_show(self, **event_args):
+    """This method is called when the column panel is shown on the screen"""
+    self.card_1.visible = True
+    pass
+
+  def card_1_hide(self, **event_args):
+    self.card_1.visible = False
+    """This method is called when the column panel is removed from the screen"""
+    pass
+    
+  def card_7_show(self, **event_args):
+    """This method is called when the column panel is shown on the screen"""
+    self.card_7.visible = True
+    pass
+
+  def card_7_hide(self, **event_args):
+    self.card_7.visible = False
+    """This method is called when the column panel is removed from the screen"""
+    pass
+    
+
     # Any code you write here will run before the form opens.
 
   def button_1_click(self, **event_args):
@@ -30,13 +62,23 @@ class MusicPlayer(MusicPlayerTemplate):
 
   def button_12_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.card_6.visible
-    
+    self.card_6_hide()
+    self.card_7_hide()
+    self.card_1_show()
     pass
 
   def button_13_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.card_1.visible
+    self.card_6_show()
+    self.card_1_hide()
+    self.card_7_hide()
+    pass
+
+  def button_11_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.card_7_show()
+    self.card_1_hide()
+    self.card_6_hide()
     pass
 
 
