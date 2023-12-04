@@ -28,12 +28,16 @@ class Beverages(BeveragesTemplate):
       column_panel.add_component(label)
 
       self.drink_menu.add_component(column_panel)
-      for i, row in drinks_list:
-        if food_item_type == drinks_list[i]:
+      for row in drinks_list:
+        if food_item_type == drinks_list[row]:
+          type_row = drinks_list[row]
+          drinks_text = type_row['Specific Item']
+          drinks_button = Button(text=drinks_text)
+          self.
           
           
 
-    self.drink_menu.clear()
+    # self.drink_menu.clear()
     # Make some default columns to be populated within the card
     drink_columns = 4
     
@@ -41,8 +45,6 @@ class Beverages(BeveragesTemplate):
     self.drink_menu.columns = drink_columns
     
     #get a list of drinks from the fullmenu
-
-
     num_rows = (len(drinks_list) + drink_columns-1) // drink_columns
     button_index = 0
 
