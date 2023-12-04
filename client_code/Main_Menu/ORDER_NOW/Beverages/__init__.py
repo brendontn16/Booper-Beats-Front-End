@@ -28,7 +28,12 @@ class Beverages(BeveragesTemplate):
       column_panel.add_component(label)
 
       self.drink_menu.add_component(column_panel)
-    
+      for i, row in drinks_list:
+        if food_item_type == drinks_list[i]:
+          
+          
+
+    self.drink_menu.clear()
     # Make some default columns to be populated within the card
     drink_columns = 4
     
@@ -39,11 +44,13 @@ class Beverages(BeveragesTemplate):
 
 
     num_rows = (len(drinks_list) + drink_columns-1) // drink_columns
+    button_index = 0
 
     #generate a button for each of these drinks into the columned panels
     for row_index in range(num_rows):
+      
       for col_index in range(drink_columns):
-          button_index = row_index * drink_columns + col_index
+          #button_index = row_index * drink_columns + col_index
 
           if button_index < len(drinks_list):
             drink_row = drinks_list[button_index]
@@ -53,6 +60,7 @@ class Beverages(BeveragesTemplate):
         
             #place the button within the grid
             self.drink_menu.add_component(drink_button, row=row_index, column=col_index)
+            button_index = button_index +1
       
 
   def button_11_click(self, **event_args):
