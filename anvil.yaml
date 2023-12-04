@@ -25,30 +25,30 @@ db_schema:
       type: number
     title: CustomFoodMenu
   fullmenu:
-    client: none
+    client: search
     server: full
     columns:
-    - name: Food Item Key
+    - name: Food_Item_Key
       admin_ui: {order: 0, width: 110}
       type: number
-    - name: Menu Type
-      admin_ui: {order: 1, width: 89}
+    - name: Menu_Type
+      admin_ui: {order: 1, width: 122}
       type: string
-    - name: Food Item Type
+    - name: Food_Item_Type
       admin_ui: {order: 2, width: 117}
       type: string
-    - name: Specific Item
+    - name: Specific_Item
       admin_ui: {order: 3, width: 130}
       type: string
     - name: Description
       admin_ui: {order: 4, width: 111}
       type: string
-    - name: Extra Cost
+    - name: Extra_Cost
       admin_ui: {order: 5, width: 84}
       type: number
     title: FullMenu
   pricemenu:
-    client: none
+    client: search
     server: full
     columns:
     - name: ItemPrice Key
@@ -68,7 +68,7 @@ db_schema:
       type: string
     title: PriceMenu
   order_reciept:
-    client: none
+    client: full
     server: full
     columns:
     - name: Order Key
