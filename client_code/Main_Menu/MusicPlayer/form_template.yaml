@@ -18,16 +18,21 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'ESBNME,RQCNHN XGKOSP,YMIKZJ'}
     components:
+    - name: button_14
+      properties: {text: ALL}
+      type: Button
+      layout_properties: {grid_position: 'LLALTJ,PYDDGU'}
+      event_bindings: {click: button_14_click}
+    - name: button_11
+      properties: {text: Karaoke}
+      type: Button
+      layout_properties: {grid_position: 'EJEMON,ZCITXJ'}
+      event_bindings: {click: button_11_click}
     - name: button_12
       properties: {text: TOP 40s, enabled: true}
       type: Button
       layout_properties: {grid_position: 'EJEMON,YUNKKF'}
       event_bindings: {click: button_12_click}
-    - name: button_11
-      properties: {text: Karaoke}
-      type: Button
-      layout_properties: {grid_position: 'EJEMON,DUZHAH'}
-      event_bindings: {click: button_11_click}
     - name: button_13
       properties: {text: Preset Playlist}
       type: Button
@@ -38,8 +43,7 @@ components:
       visible: false}
     type: ColumnPanel
     layout_properties: {grid_position: 'ESBNME,RQCNHN UGTFRF,DJTTOK'}
-    data_bindings:
-    - {property: visible, code: 'self.item['''']', writeback: false}
+    data_bindings: []
     event_bindings: {show: card_6_show, hide: card_6_hide}
     components:
     - name: button_1_copy_copy
@@ -67,7 +71,7 @@ components:
       properties: {text: button_6 p2}
       type: Button
       layout_properties: {grid_position: 'SINCGL,OPHCHA GSROXV,IOTWOQ UYFACH,BIAXRL'}
-  - name: card_6
+  - name: card_9
     properties: {role: card, col_widths: '{"ZNPOPX":20,"IOTWOQ":40,"SDECZS":30,"SBPHFZ":30,"WNYLJU":30,"BIAXRL":30}',
       visible: false}
     type: ColumnPanel
@@ -98,17 +102,18 @@ components:
       properties: {text: button_6 p1}
       type: Button
       layout_properties: {grid_position: 'GSROXV,IOTWOQ UYFACH,BIAXRL'}
-    data_bindings:
-    - {property: visible, code: 'self.item['''']', writeback: false}
-    event_bindings: {show: card_6_show, hide: card_6_hide}
-  - name: card_1
+    data_bindings: []
+    event_bindings: {show: card_9_show, hide: card_9_hide}
+  - name: card_8
     properties: {role: card, col_widths: '{"ZNPOPX":20,"IOTWOQ":40,"SDECZS":30,"SBPHFZ":30,"WNYLJU":30,"BIAXRL":30}',
       visible: false}
     type: ColumnPanel
-    layout_properties: {grid_position: 'ESBNME,RQCNHN SUTMAT,HMVGJY'}
+    layout_properties: {grid_position: 'ESBNME,RQCNHN XWHYHR,UOOLMA'}
+    event_bindings: {show: card_0_show, hide: card_0_hide}
+    data_bindings: []
     components:
     - name: button_1
-      properties: {text: button_1}
+      properties: {text: button_1, visible: true}
       type: Button
       layout_properties: {grid_position: 'GSROXV,ZNPOPX ZUIWXS,NIORXI'}
       event_bindings: {click: button_1_click}
@@ -132,7 +137,6 @@ components:
       properties: {text: button_6}
       type: Button
       layout_properties: {grid_position: 'SINCGL,OPHCHA GSROXV,IOTWOQ UYFACH,BIAXRL'}
-    event_bindings: {show: card_1_show, hide: card_1_hide}
   - name: card_4
     properties: {role: card}
     type: ColumnPanel

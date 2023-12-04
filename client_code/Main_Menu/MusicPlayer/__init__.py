@@ -6,24 +6,22 @@ class MusicPlayer(MusicPlayerTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-  
-  def card_6_hide(self, **event_args):
+  def card_9_show(self, **event_args):
+    self.card_9.visible = True
+    """This method is called when the column panel is shown on the screen"""
+    pass
+  def card_9_hide(self, **event_args):
     """This method is called when the column panel is removed from the screen"""
-    self.card_6.visible = False
+    self.card_9.visible = False
     pass
 
-  def card_6_show(self, **event_args):
-    self.card_6.visible = True
+  def card_8_show(self, **event_args):
     """This method is called when the column panel is shown on the screen"""
+    self.card_8.visible = True
     pass
 
-  def card_1_show(self, **event_args):
-    """This method is called when the column panel is shown on the screen"""
-    self.card_1.visible = True
-    pass
-
-  def card_1_hide(self, **event_args):
-    self.card_1.visible = False
+  def card_8_hide(self, **event_args):
+    self.card_8.visible = False
     """This method is called when the column panel is removed from the screen"""
     pass
     
@@ -62,23 +60,30 @@ class MusicPlayer(MusicPlayerTemplate):
 
   def button_12_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.card_6_hide()
+    self.card_9_hide()
     self.card_7_hide()
-    self.card_1_show()
+    self.card_8_show()
     pass
 
   def button_13_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.card_6_show()
-    self.card_1_hide()
+    self.card_9_show()
+    self.card_8_hide()
     self.card_7_hide()
     pass
 
   def button_11_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.card_7_show()
-    self.card_1_hide()
-    self.card_6_hide()
+    self.card_8_hide()
+    self.card_9_hide()
+    pass
+
+  def button_14_click(self, **event_args):
+    self.card_7_show()
+    self.card_8_show()
+    self.card_9_show()
+    """This method is called when the button is clicked"""
     pass
 
 
