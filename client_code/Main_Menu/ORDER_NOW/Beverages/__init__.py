@@ -12,6 +12,22 @@ class Beverages(BeveragesTemplate):
     # Any code you write here will run before the form opens.
     # ensure page data is clear before generation
     self.drink_menu.clear()
+
+    #food_item_types = app_tables.fullmenu.search(Menu_Type='Drinks').distinct('Food_Item_Type')
+    
+    drinks_list = app_tables.fullmenu.search(Menu_Type='Drinks')
+
+    unique_food_item_types = set()
+
+    for row in drinks_list:
+      unique_food_item_types.add(row['Food_Item_Type'])
+    
+    for food_item_type in unique_food_item_types:
+      column_panel = ColumnPanel()
+      label = Label(text=food_item_type)
+      column_panel.add_component(label)
+
+      self.drink_menu.add_component(column_panel)
     
     # Make some default columns to be populated within the card
     drink_columns = 4
@@ -20,7 +36,7 @@ class Beverages(BeveragesTemplate):
     self.drink_menu.columns = drink_columns
     
     #get a list of drinks from the fullmenu
-    drinks_list = app_tables.fullmenu.search(Menu_Type='Drinks')
+
 
     num_rows = (len(drinks_list) + drink_columns-1) // drink_columns
 
