@@ -1,8 +1,10 @@
 from ._anvil_designer import ORDER_NOWTemplate
 from anvil import *
+
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import anvil.server
 
 class ORDER_NOW(ORDER_NOWTemplate):
   def __init__(self, **properties):
