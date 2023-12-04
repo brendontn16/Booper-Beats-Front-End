@@ -18,14 +18,11 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'ESBNME,RQCNHN XGKOSP,YMIKZJ'}
     components:
-    - name: button_11
-      properties: {text: More from Artist}
-      type: Button
-      layout_properties: {grid_position: 'EJEMON,LFHRTP'}
     - name: button_12
       properties: {text: TOP 40s, enabled: true}
       type: Button
       layout_properties: {grid_position: 'EJEMON,YUNKKF'}
+      event_bindings: {click: button_12_click}
     - name: button_13
       properties: {text: Preset Playlist}
       type: Button

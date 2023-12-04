@@ -28,6 +28,10 @@ class MusicPlayer(MusicPlayerTemplate):
     self.label_4.text = 1
     self.label_3.text = 1
 
+  def button_12_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+
 
 
  
