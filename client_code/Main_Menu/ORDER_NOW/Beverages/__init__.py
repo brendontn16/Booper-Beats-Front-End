@@ -17,6 +17,7 @@ class Beverages(BeveragesTemplate):
     
     # prep the grid with columns
     
+    
     #get a list of drinks from the fullmenu
     drinks_list = app_tables.fullmenu.search(Menu_Type='Drinks')
     #buttons_per_column = len(drinks_list) // drink_columns
