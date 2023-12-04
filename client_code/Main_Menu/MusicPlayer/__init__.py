@@ -1,5 +1,6 @@
 from anvil import *
-import Image, anvil.server
+import anvil.server
+import spotipy
 
 class MusicPlayer(MusicPlayerTemplate):
 
