@@ -67,6 +67,11 @@ db_schema:
       admin_ui: {order: 1.5, width: 117}
       type: string
     title: PriceMenu
+  order_reciept:
+    client: none
+    server: full
+    columns: []
+    title: Order Reciept
 startup: {type: form, module: Main_Menu}
 name: Classic 2
 startup_form: null
