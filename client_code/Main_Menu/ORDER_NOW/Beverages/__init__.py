@@ -13,8 +13,9 @@ class Beverages(BeveragesTemplate):
     """This method is called when the button is clicked"""
     open_form('Main_Menu.ORDER_NOW')
     pass
-
+    
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    alert(content = "how many", title = "", large = False, button = [()])
+    creat
+    alert(content = milk, title = "Item Quanity", large = False, buttons = [("-1", --milk),("+1",++milk)])
     pass
