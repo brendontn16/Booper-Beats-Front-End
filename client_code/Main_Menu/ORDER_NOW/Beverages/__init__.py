@@ -16,7 +16,7 @@ class Beverages(BeveragesTemplate):
     drink_columns = 4
     
     # prep the grid with columns
-    
+    self.drink_menu.columns = drink_columns
     
     #get a list of drinks from the fullmenu
     drinks_list = app_tables.fullmenu.search(Menu_Type='Drinks')
