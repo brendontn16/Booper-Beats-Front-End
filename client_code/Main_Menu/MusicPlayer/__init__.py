@@ -53,3 +53,26 @@ class MusicPlayer(MusicPlayerTemplate):
           
     def button_6_click(self, **event_args):
         self.close()
+
+    def update_album_artwork(self, artwork_url):
+        self.image_album_artwork.source = artwork_url
+
+    def search_and_add_to_playlist(self, playlist_uri):
+        track_uri = search_for_track_and_select()
+
+        if track_uri:
+            try:
+                sp.playlist_add_items(playlist_uri, items=[track_uri])
+                print(f"Track added to playlist: {playlist_uri}")
+
+                # Call the server function to get the album artwork URL
+                artwork_url = anvil.server.call('get_album_artwork_url', track_uri)
+
+                if artwork_url:
+                    self.update_album_artwork(artwork_url)
+                    return track_uri
+                else:
+                    print("Error getting album artwork URL.")
+            except spotipy.SpotifyException as e:
+                print(f"Error adding track to playlist: {e}")
+        return None

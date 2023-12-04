@@ -54,3 +54,13 @@ def select_track_from_results(tracks, index):
         return track_uri
     else:
         return "Invalid track index."
+
+@anvil.server.callable
+def get_album_artwork_url(track_uri):
+    try:
+        track_info = sp.track(track_uri)
+        artwork_url = track_info['album']['images'][0]['url']
+        return artwork_url
+    except spotipy.SpotifyException as e:
+        print(f"Error getting album artwork URL: {e}")
+        return None
