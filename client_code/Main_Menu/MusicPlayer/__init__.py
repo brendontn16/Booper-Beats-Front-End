@@ -30,6 +30,13 @@ class MusicPlayer(MusicPlayerTemplate):
 
   def button_12_click(self, **event_args):
     """This method is called when the button is clicked"""
+    self.card_6.visible
+    
+    pass
+
+  def button_13_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.card_1.visible
     pass
 
 
