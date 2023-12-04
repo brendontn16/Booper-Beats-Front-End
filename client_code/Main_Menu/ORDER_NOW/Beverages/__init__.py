@@ -20,14 +20,15 @@ class Beverages(BeveragesTemplate):
     
     #get a list of drinks from the fullmenu
     drinks_list = app_tables.fullmenu.search(Menu_Type='Drinks')
-    #buttons_per_column = len(drinks_list) // drink_columns
 
     #generate a button for each of these drinks into the columned panels
     for i, row in enumerate(drinks_list):
       drink_button = Button(text=row['Specific_Item'])
       #give the button interactivity
+      #place the button within the grid
+      drink_row_index = i // drink_columns
       drink_column_index = i % drink_columns
-      drink_column_panels[drink_column_index].add_component(drink_button)
+      self.drink_menu.add_component(drink_button, row= drink_row_index, column=drink_column_index)
       
 
   def button_11_click(self, **event_args):
