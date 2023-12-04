@@ -12,7 +12,16 @@ components:
     properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'ESBNME,IIPCMQ RTLKNQ,XDJGKO'}
-    components: []
+    components:
+    - name: Music
+      properties: {}
+      type: TextBox
+      layout_properties: {grid_position: 'EEAVRH,OZJUOV'}
+      event_bindings: {pressed_enter: Music_pressed_enter}
+    - name: button_Search
+      properties: {text: 'search :)'}
+      type: Button
+      layout_properties: {grid_position: 'EEAVRH,IMKYXY'}
   - name: image_1
     properties: {source: _/theme/Untitled (1).png}
     type: Image
