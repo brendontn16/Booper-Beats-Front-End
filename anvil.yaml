@@ -70,7 +70,19 @@ db_schema:
   order_reciept:
     client: none
     server: full
-    columns: []
+    columns:
+    - name: Order Key
+      admin_ui: {order: 0, width: 83}
+      type: number
+    - name: Food Item Type
+      admin_ui: {order: 3, width: 136}
+      type: string
+    - name: amount ordered
+      admin_ui: {order: 4, width: 124}
+      type: number
+    - name: Total Cost
+      admin_ui: {order: 5, width: 84}
+      type: number
     title: Order Reciept
 startup: {type: form, module: Main_Menu}
 name: Classic 2
