@@ -18,30 +18,18 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'ESBNME,RQCNHN XGKOSP,YMIKZJ'}
     components:
-    - name: more_from_artist
-      properties: {}
-      type: Label
-      layout_properties: {grid_position: 'EJEMON,LFHRTP LFVCTJ,HBBIAN'}
     - name: button_11
-      properties: {text: button_11}
+      properties: {text: More from Artist}
       type: Button
-      layout_properties: {grid_position: 'EJEMON,LFHRTP HFJQSN,ZACJKB'}
-    - name: label_3
-      properties: {}
-      type: Label
-      layout_properties: {grid_position: 'EJEMON,YUNKKF ZFEESZ,ZRJYTP'}
+      layout_properties: {grid_position: 'EJEMON,LFHRTP'}
     - name: button_12
-      properties: {text: button_12}
+      properties: {text: TOP 40s, enabled: true}
       type: Button
-      layout_properties: {grid_position: 'EJEMON,YUNKKF GRYFMM,ZZBWXN'}
-    - name: label_4
-      properties: {}
-      type: Label
-      layout_properties: {grid_position: 'EJEMON,OIFQRI TIOIFA,PURIUC'}
+      layout_properties: {grid_position: 'EJEMON,YUNKKF'}
     - name: button_13
-      properties: {text: button_13}
+      properties: {text: Preset Playlist}
       type: Button
-      layout_properties: {grid_position: 'EJEMON,OIFQRI IDVPBN,MVRDOO'}
+      layout_properties: {grid_position: 'EJEMON,OIFQRI'}
   - name: card_1
     properties: {role: card, col_widths: '{"ZNPOPX":20,"IOTWOQ":40,"SDECZS":30,"SBPHFZ":30,"WNYLJU":30,"BIAXRL":30}'}
     type: ColumnPanel
