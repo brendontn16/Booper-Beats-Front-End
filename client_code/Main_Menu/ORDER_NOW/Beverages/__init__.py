@@ -12,6 +12,7 @@ class Beverages(BeveragesTemplate):
     # Any code you write here will run before the form opens.
     # ensure page data is clear before generation
     self.drink_menu.clear()
+    
     # Make some default columns to be populated within the card
     drink_columns = 4
     
@@ -21,14 +22,21 @@ class Beverages(BeveragesTemplate):
     #get a list of drinks from the fullmenu
     drinks_list = app_tables.fullmenu.search(Menu_Type='Drinks')
 
+    num_rows = (len(drinks_list) + drink_columns-1) // drink_columns
+
     #generate a button for each of these drinks into the columned panels
-    for i, row in enumerate(drinks_list):
-      drink_button = Button(text=row['Specific_Item'])
-      #give the button interactivity
-      #place the button within the grid
-      drink_row_index = i // drink_columns
-      drink_column_index = i % drink_columns
-      self.drink_menu.add_component(drink_button, row= drink_row_index, column=drink_column_index)
+    for row_index in range(num_rows):
+      for col_index in range(drink_columns):
+          button_index = row_index * drink_columns + col_index
+
+          if button_index < len(drinks_list):
+            drink_row = drinks_list[button_index]
+            drink_text = drink_row['Specific_Item']
+            drink_button = Button(text=drink_text)
+            #give the button interactivity
+        
+            #place the button within the grid
+            self.drink_menu.add_component(drink_button, row=row_index, column=col_index)
       
 
   def button_11_click(self, **event_args):
