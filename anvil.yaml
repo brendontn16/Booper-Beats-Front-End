@@ -1,5 +1,72 @@
 allow_embedding: false
 package_name: Classic_2
+db_schema:
+  customfoodmenu:
+    client: none
+    server: full
+    columns:
+    - name: Food Type
+      admin_ui: {order: 0, width: 93}
+      type: string
+    - name: Ingredient Layer
+      admin_ui: {order: 1, width: 153}
+      type: string
+    - name: Item Key
+      admin_ui: {order: -1, width: 76}
+      type: number
+    - name: Ingredient Type
+      admin_ui: {order: 2, width: 137}
+      type: string
+    - name: Ingredient Name
+      admin_ui: {order: 3, width: 127}
+      type: string
+    - name: Cost
+      admin_ui: {order: 4, width: 122}
+      type: number
+    title: CustomFoodMenu
+  fullmenu:
+    client: none
+    server: full
+    columns:
+    - name: Food Item Key
+      admin_ui: {order: 0, width: 110}
+      type: number
+    - name: Menu Type
+      admin_ui: {order: 1, width: 89}
+      type: string
+    - name: Food Item Type
+      admin_ui: {order: 2, width: 117}
+      type: string
+    - name: Specific Item
+      admin_ui: {order: 3, width: 130}
+      type: string
+    - name: Description
+      admin_ui: {order: 4, width: 111}
+      type: string
+    - name: Extra Cost
+      admin_ui: {order: 5, width: 84}
+      type: number
+    title: FullMenu
+  pricemenu:
+    client: none
+    server: full
+    columns:
+    - name: ItemPrice Key
+      admin_ui: {order: 0, width: 107}
+      type: number
+    - name: Menu Type
+      admin_ui: {order: 1, width: 89}
+      type: string
+    - name: Description
+      admin_ui: {order: 2, width: 117}
+      type: string
+    - name: Price
+      admin_ui: {width: 51, order: 3}
+      type: number
+    - name: Food Item Type
+      admin_ui: {order: 1.5, width: 117}
+      type: string
+    title: PriceMenu
 startup: {type: form, module: Main_Menu}
 name: Classic 2
 startup_form: null
