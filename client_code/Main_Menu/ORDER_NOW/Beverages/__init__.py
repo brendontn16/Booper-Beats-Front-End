@@ -16,6 +16,6 @@ class Beverages(BeveragesTemplate):
     
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    creat
+  
     alert(content = milk, title = "Item Quanity", large = False, buttons = [("-1", --milk),("+1",++milk)])
     pass
