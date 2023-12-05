@@ -9,62 +9,56 @@ class Beverages(BeveragesTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
+
+    
     # Any code you write here will run before the form opens.
+
     # ensure page data is clear before generation
     self.drink_menu.clear()
 
-    #food_item_types = app_tables.fullmenu.search(Menu_Type='Drinks').distinct('Food_Item_Type')
-    
+    # get a list of drinks from the fullmenu
     drinks_list = app_tables.fullmenu.search(Menu_Type='Drinks')
 
+    # prepare an empty set for the unique food_item_type from fullmenu
     unique_food_item_types = set()
 
+    # populate the set with the food_item_types for drinks (aka tea, soda, etc)
     for row in drinks_list:
       unique_food_item_types.add(row['Food_Item_Type'])
-    
+
+    current_row = 0
+    # go through the loop and make a label for each group type
     for food_item_type in unique_food_item_types:
-      column_panel = ColumnPanel()
+      
+      current_col = 0
+      row_panel = DataRowPanel()
       label = Label(text=food_item_type)
-      column_panel.add_component(label)
-
-      self.drink_menu.add_component(column_panel)
-      for row in drinks_list:
-        if food_item_type == drinks_list[row]:
-          type_row = drinks_list[row]
-          drinks_text = type_row['Specific Item']
-          drinks_button = Button(text=drinks_text)
-          self.
-          
-          
-
-    # self.drink_menu.clear()
-    # Make some default columns to be populated within the card
-    drink_columns = 4
-    
-    # prep the grid with columns
-    self.drink_menu.columns = drink_columns
-    
-    #get a list of drinks from the fullmenu
-    num_rows = (len(drinks_list) + drink_columns-1) // drink_columns
-    button_index = 0
-
-    #generate a button for each of these drinks into the columned panels
-    for row_index in range(num_rows):
+      row_panel.add_component(label)
+      row_panel.border = "1px solid #888888"
+      row_panel.background = "#ffffff"
+      self.drink_menu.add_component(row_panel, row=current_row, column=current_col)
       
-      for col_index in range(drink_columns):
-          #button_index = row_index * drink_columns + col_index
+      specific_items = [row['Specific_Item'] for row in drinks_list 
+                        if row['Food_Item_Type'] == food_item_type]
 
-          if button_index < len(drinks_list):
-            drink_row = drinks_list[button_index]
-            drink_text = drink_row['Specific_Item']
-            drink_button = Button(text=drink_text)
-            #give the button interactivity
-        
-            #place the button within the grid
-            self.drink_menu.add_component(drink_button, row=row_index, column=col_index)
-            button_index = button_index +1
-      
+      max_columns = 4
+      current_col = 0
+      #put drinks of that type under the respective label
+      for specific_item in specific_items:
+        drinks_button = Button(text=specific_item)
+        # add button interactions
+        #drinks_button = add_event_handler('click', self.drinks_button_click)
 
+        # ensure the buttons are spread amongst columns top_down
+        if current_col < max_columns:
+          row_panel.add_component(drinks_button, column= current_col)
+          current_col = current_col +1
+        else:
+          #current_row = current_row +1
+          current_col = 0
+          row_panel.add_component(drinks_button, column=current_col)       
+
+  
   def button_11_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('Main_Menu.ORDER_NOW')
