@@ -47,7 +47,7 @@ class Beverages(BeveragesTemplate):
       for specific_item in specific_items:
         drinks_button = Button(text=specific_item)
         # add button interactions
-        drinks_button.add_event_handler('click', self.drinks_button_click)
+        drinks_button.add_event_handler('click', lambda **event_args: self.drinks_button_click(specific_item))
 
         # ensure the buttons are spread amongst columns top_down
         if current_col < max_columns:
@@ -63,10 +63,10 @@ class Beverages(BeveragesTemplate):
     open_form('Main_Menu.ORDER_NOW')
     pass
     
-  def drinks_button_click(self, **event_args):
+  def drinks_button_click(self, lamda **event_args):
     """This method is called when the button is clicked"""
 
     #alert()
   
-    #alert(content = self., title = "Item Quanity", large = False, buttons = [("-1", --milk),("+1",++milk)])
+    alert(content = event_args, title = "Item Quanity", large = False, buttons = [("-1", --milk),("+1",++milk)])
     pass
