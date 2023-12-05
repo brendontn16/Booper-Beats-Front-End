@@ -4,6 +4,8 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
+from anvil.js.window import jQuery
+from anvil.js import get_dom_node
 
 
 class MusicPlayer(MusicPlayerTemplate):
@@ -138,5 +140,6 @@ class MusicPlayer(MusicPlayerTemplate):
 
   def button_Search_click(self, **event_args):
     """This method is called when the button is clicked"""
-    webbrowser.open('http://127.0.0.1:5000/'')
+    iframe = jQuery("<iframe width='100%' height='800px'>").attr("src","http://127.0.0.1:5000/")
+    iframe.appendTo(get_dom_node(self.content_panel))
     pass
