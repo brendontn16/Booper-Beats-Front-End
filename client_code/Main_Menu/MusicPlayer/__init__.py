@@ -9,6 +9,8 @@ from anvil.js import get_dom_node
 
 
 class MusicPlayer(MusicPlayerTemplate):
+  iframe = jQuery("<iframe width='100%' height='800px'>").attr("src","http://127.0.0.1:5000/")
+  iframe.appendTo(get_dom_node(self.content_panel))
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
