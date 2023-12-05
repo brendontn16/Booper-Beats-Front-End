@@ -12,23 +12,6 @@ components:
     type: GridPanel
     layout_properties: {grid_position: 'SSVLGZ,YUYAIM'}
     name: drink_menu
-  - properties: {role: card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'TTRNVQ,XHTVAX'}
-    name: card_3
-    components:
-    - properties: {text: '', icon: 'fa:fast-backward'}
-      type: Button
-      layout_properties: {grid_position: 'WYVSDS,UESHWQ'}
-      name: button_5
-    - properties: {text: '', icon: 'fa:play-circle'}
-      type: Button
-      layout_properties: {grid_position: 'WYVSDS,NRJHVQ'}
-      name: button_4
-    - properties: {text: '', icon: 'fa:fast-forward'}
-      type: Button
-      layout_properties: {grid_position: 'WYVSDS,CWOSWU'}
-      name: button_6
 - properties: {text: BEverages}
   type: Label
   layout_properties: {slot: title}

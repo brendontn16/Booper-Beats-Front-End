@@ -69,23 +69,6 @@ components:
       properties: {content: Description of a Cauliflower Crust Pizza}
       type: RichText
       layout_properties: {grid_position: 'TVYPOI,GCCFQD MQFPDG,UOCEFI'}
-  - name: card_3
-    properties: {role: card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'TTRNVQ,XHTVAX'}
-    components:
-    - name: button_5
-      properties: {text: '', icon: 'fa:fast-backward'}
-      type: Button
-      layout_properties: {grid_position: 'WYVSDS,UESHWQ'}
-    - name: button_4
-      properties: {text: '', icon: 'fa:play-circle'}
-      type: Button
-      layout_properties: {grid_position: 'WYVSDS,NRJHVQ'}
-    - name: button_6
-      properties: {text: '', icon: 'fa:fast-forward'}
-      type: Button
-      layout_properties: {grid_position: 'WYVSDS,CWOSWU'}
 - name: label_1
   properties: {text: Create a Pizza}
   type: Label
