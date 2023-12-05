@@ -1,28 +1,33 @@
-from ._anvil_designer import Create_A_PizzaTemplate
-from anvil import *
-import anvil.tables as tables
-import anvil.tables.query as q
-from anvil.tables import app_tables
+# Import the Anvil dependencies
 import anvil.server
+from anvil import open_form
 
+class MyForm(MyFormTemplate):
+    def __init__(self, **properties):
+        self.init_components(**properties)
+        self.total_price = 0  # Initialize the total price
 
-class Create_A_Pizza(Create_A_PizzaTemplate):
-  def __init__(self, **properties):
-    # Set Form properties and Data Bindings.
-    self.init_components(**properties)
+    def update_order(self, ingredient, price):
+        # Update the order menu with the selected ingredient and its price
+        self.order_dropdown.items.append(f"{ingredient} - ${price:.2f}")
+        # Update the total price
+        self.total_price += price
+        self.total_label.text = f"Total: ${self.total_price:.2f}"
 
-    # Any code you write here will run before the form opens.
+    def button_crust_click(self, **event_args):
+        # Call the server function to get the crust information
+        crust_data = anvil.server.call('get_ingredient_data', 'Crust')
+        # Update the order with the crust information
+        self.update_order(crust_data['name'], crust_data['price'])
 
-  def button_11_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('Main_Menu.ORDER_NOW')
-    pass
+    def button_topping_click(self, **event_args):
+        # Call the server function to get the topping information
+        topping_data = anvil.server.call('get_ingredient_data', 'Topping')
+        # Update the order with the topping information
+        self.update_order(topping_data['name'], topping_data['price'])
 
-  def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    pass
-
-  def button_10_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    alert(content= "confirm order?", title= "order confirmation", buttons = [("yes"),("no")])
-    pass
+    def button_sauce_click(self, **event_args):
+        # Call the server function to get the sauce information
+        sauce_data = anvil.server.call('get_ingredient_data', 'Sauce')
+        # Update the order with the sauce information
+        self.update_order(sauce_data['name'], sauce_data['price'])

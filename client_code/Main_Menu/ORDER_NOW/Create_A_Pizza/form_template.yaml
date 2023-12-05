@@ -27,6 +27,7 @@ components:
       properties: {text: Thin($2.00)}
       type: Button
       layout_properties: {grid_position: 'PBVIXQ,AVYFRV LFJJDF,UXSMHM'}
+      event_bindings: {click: button_crust_click}
     - name: Thick
       properties: {text: Thick($2.50)}
       type: Button

@@ -89,6 +89,29 @@ db_schema:
       type: link_single
       target: fullmenu
     title: Order Reciept
+  choose_pizza:
+    client: none
+    server: full
+    columns:
+    - name: Crust
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: Crust_Price
+      admin_ui: {width: 200, order: 1}
+      type: number
+    - name: Topping
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: Topping_Price
+      admin_ui: {width: 200, order: 3}
+      type: number
+    - name: Sauce
+      admin_ui: {width: 200, order: 4}
+      type: string
+    - name: Sauce_Price
+      admin_ui: {width: 200, order: 5}
+      type: number
+    title: CHOOSE_PIZZA
 startup: {type: form, module: Main_Menu}
 name: Classic 2
 startup_form: null
@@ -101,3 +124,6 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+- source: /runtime/services/anvil/files.yml
+  client_config: {}
+  server_config: {file_table: files}

@@ -10,6 +10,7 @@ unique_ids:
     Main_Menu.Specials: '1701392046297344777137945.5065'
   modules: {}
   server_modules:
+    Ingredient_Table: '1701781473357602170572763.3813'
     MusicPlayer: '1701479343170844677765754.6105'
   assets:
     Untitled (1).png: H6BYRHDFAB6ULDLNAVH2MGCQZ7TGKOKV
