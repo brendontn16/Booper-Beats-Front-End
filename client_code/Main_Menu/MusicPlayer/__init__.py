@@ -7,9 +7,11 @@ import anvil.server
 
 
 class MusicPlayer(MusicPlayerTemplate):
-  
   def __init__(self, **properties):
+    # Set Form properties and Data Bindings.
     self.init_components(**properties)
+
+    # Any code you write here will run before the form opens.
   def card_9_show(self, **event_args):
     self.card_9.visible = True
     """This method is called when the column panel is shown on the screen"""
