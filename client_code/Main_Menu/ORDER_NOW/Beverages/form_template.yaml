@@ -25,6 +25,7 @@ components:
     properties: {text: Coke($2.50)}
     type: Button
     layout_properties: {grid_position: 'EVHKRG,HINAHR WEKIRO,SHOWER'}
+    event_bindings: {click: button_1_click}
   - name: button_4
     properties: {text: Water($1.00)}
     type: Button
