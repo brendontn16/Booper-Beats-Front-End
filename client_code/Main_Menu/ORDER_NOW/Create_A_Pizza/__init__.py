@@ -17,3 +17,7 @@ class Create_A_Pizza(Create_A_PizzaTemplate):
     """This method is called when the button is clicked"""
     open_form('Main_Menu.ORDER_NOW')
     pass
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
