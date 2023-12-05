@@ -63,10 +63,11 @@ class Beverages(BeveragesTemplate):
     open_form('Main_Menu.ORDER_NOW')
     pass
     
-  def drinks_button_click(self, lamda **event_args):
+  #def drinks_button_click(self, lamda **event_args):
     """This method is called when the button is clicked"""
 
-    #alert()
-  
-    alert(content = event_args, title = "Item Quanity", large = False, buttons = [("-1", --milk),("+1",++milk)])
-    pass
+    # inteded to be convered to pop up buttons to confirm and choose amount to order 
+    # should be cross referenced against pricemenu and put into the order receipt.  overall cart totalling should happen separately
+    # from the Order receipt itself 
+    #alert(content = event_args, title = "Item Quanity", large = False, buttons = [("-1", --milk),("+1",++milk)])
+    #pass
