@@ -21,3 +21,8 @@ class Create_A_Pizza(Create_A_PizzaTemplate):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     pass
+
+  def button_10_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    alert(content= "confirm order?", title= "order confirmation", buttons = [("yes"),("no")])
+    pass
