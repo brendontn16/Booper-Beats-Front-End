@@ -36,7 +36,7 @@ components:
       type: Button
       layout_properties: {grid_position: 'PBVIXQ,AVYFRV KMJVBV,NYGNDQ'}
     - name: button_4
-      properties: {text: Gluten Free($350)}
+      properties: {text: Gluten Free($3.50)}
       type: Button
       layout_properties: {grid_position: 'PBVIXQ,AVYFRV XNQERY,PVXOYJ'}
     - name: label_2
@@ -48,21 +48,37 @@ components:
       type: Button
       layout_properties: {grid_position: 'PBVIXQ,EYGLDU GRWGOK,JGDLKW'}
     - name: button_1
-      properties: {text: button_1}
+      properties: {text: Olives($1.75)}
       type: Button
       layout_properties: {grid_position: 'PBVIXQ,EYGLDU HPRVMR,ZOVVYU'}
+    - name: button_6
+      properties: {text: Sausage($2.50)}
+      type: Button
+      layout_properties: {grid_position: 'PBVIXQ,EYGLDU ETSPTF,ORXGAL'}
+    - name: button_5
+      properties: {text: Mushrooms($2.00)}
+      type: Button
+      layout_properties: {grid_position: 'PBVIXQ,EYGLDU ETSPTF,ORXGAL'}
     - name: label_3
       properties: {align: center, text: Sauce}
       type: Label
       layout_properties: {grid_position: 'PBVIXQ,JAIUWL NLXTOG,CSHJAT'}
     - name: button_3
-      properties: {text: button_3}
+      properties: {text: Marinara($1.00)}
       type: Button
       layout_properties: {grid_position: 'PBVIXQ,JAIUWL SSDICV,VLZFJE'}
     - name: button_2
-      properties: {text: button_2}
+      properties: {text: BBQ($1.50)}
       type: Button
       layout_properties: {grid_position: 'PBVIXQ,JAIUWL KXNOFA,OQKSRM'}
+    - name: button_8
+      properties: {text: Alfredo($2.00)}
+      type: Button
+      layout_properties: {grid_position: 'PBVIXQ,JAIUWL LSFUNX,MLHNEB'}
+    - name: button_9
+      properties: {text: Pesto($2.50)}
+      type: Button
+      layout_properties: {grid_position: 'PBVIXQ,JAIUWL IMDGVT,XHQUCD'}
 - name: label_1
   properties: {text: Create a Pizza}
   type: Label
@@ -71,3 +87,7 @@ components:
   properties: {text: '', icon: 'fa:shopping-cart'}
   type: Button
   layout_properties: {slot: nav-right}
+- name: button_10
+  properties: {text: 'Confirm Order?'}
+  type: Button
+  layout_properties: {slot: sidebar}
