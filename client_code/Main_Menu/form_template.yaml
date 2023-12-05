@@ -36,3 +36,4 @@ components:
   properties: {text: '', icon: 'fa:shopping-cart'}
   type: Button
   layout_properties: {slot: nav-links}
+  event_bindings: {click: button_2_click}
