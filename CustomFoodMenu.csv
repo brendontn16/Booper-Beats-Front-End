@@ -1,0 +1,33 @@
+"ID","Item Key","Food Type","Ingredient Layer","Ingredient Type","Ingredient Name","Cost"
+"[554946,870956492]",1,"Pizza","Item Base","Crust","Soft Crust",0
+"[554946,870956494]",2,"Pizza","Item Base","Crust","Hand Tossed",0
+"[554946,870959928]",3,"Pizza","Item Base","Crust","Stuffed Crust",1.25
+"[554946,870959945]",4,"Pizza","Item Base","Crust","Colliflower Crust",0.75
+"[554946,870959970]",5,"Pizza","Primary Ingredient","Sauce","Marinara",0
+"[554946,870959996]",6,"Pizza","Primary Ingredient","Sauce","Garlic Butter",0
+"[554946,870960542]",7,"Pizza","Secondary Ingredient","Pizza Cheese","Mozzarella",0
+"[554946,870960543]",8,"Pizza","Secondary Ingredient","Pizza Cheese","Cheddar",0
+"[554946,870960547]",9,"Pizza","Toppings","Pizza Toppings","Pepperoni",0
+"[554946,870960549]",10,"Pizza","Toppings","Pizza Toppings","Sausage",0
+"[554946,870960550]",11,"Pizza","Toppings","Pizza Toppings","Onions",0
+"[554946,870960597]",12,"Pizza","Toppings","Pizza Toppings","Peppers",0
+"[554946,870960625]",13,"Pizza","Toppings","Pizza Toppings","Pineapple",0
+"[554946,870960643]",14,"Pizza","Toppings","Pizza Toppings","Ham",0
+"[554946,870960777]",15,"Pizza","Toppings","Pizza Toppings","Mushrooms",0
+"[554946,870960781]",16,"Burger","Item Base","Buns","Classic Bun",0
+"[554946,870960784]",17,"Burger","Item Base","Buns","Sesame Bun",0
+"[554946,870960788]",18,"Burger","Item Base","Buns","Brioche Bun",0
+"[554946,870960791]",19,"Burger","Primary Ingredient","Patty","Beef",0
+"[554946,870960882]",20,"Burger","Primary Ingredient","Patty","Turkey",0
+"[554946,870960933]",21,"Burger","Primary Ingredient","Patty","Veggie",0
+"[554946,870960935]",22,"Burger","Secondary Ingredient","Burger Cheese","Cheddar",0
+"[554946,870960936]",23,"Burger","Secondary Ingredient","Burger Cheese","Provolone",0
+"[554946,870960940]",24,"Burger","Secondary Ingredient","Burger Cheese","Swiss",0
+"[554946,870960942]",25,"Burger","Toppings","Burger Toppings","Lettuce",0
+"[554946,870960943]",26,"Burger","Toppings","Burger Toppings","Tomato",0
+"[554946,870960944]",27,"Burger","Toppings","Burger Toppings","Pickles",0
+"[554946,870960946]",28,"Burger","Toppings","Burger Toppings","Ketchup ",0
+"[554946,870960948]",29,"Burger","Toppings","Burger Toppings","Mustard",0
+"[554946,870960949]",30,"Burger","Toppings","Burger Toppings","Mayo",0
+"[554946,872418699]",31,"Pizza","Specialty","Special Pizza","Meat Lovers",1
+"[554946,872419196]",32,"Burger","Specialty","Special Burger","BLT",0
