@@ -8,9 +8,7 @@ unique_ids:
     Main_Menu.ORDER_NOW.Desserts: '1700955279432369941604421.014'
     Main_Menu.Order: '1701771829001782302892162.6205'
     Main_Menu.Specials: '1701392046297344777137945.5065'
-  modules:
-    Main_Menu.ORDER_NOW.Create_A_Pizza.Module1: '1700955641283842174632422.8135'
-    Main_Menu.ORDER_NOW.Create_A_Pizza.Package1: '1700955651837882664559236.8892'
+  modules: {}
   server_modules:
     MusicPlayer: '1701479343170844677765754.6105'
   assets:
