@@ -138,5 +138,4 @@ class MusicPlayer(MusicPlayerTemplate):
 
   def button_Search_click(self, **event_args):
     """This method is called when the button is clicked"""
-    webbrowser.open('http://127.0.0.1:5000/'')
     pass
