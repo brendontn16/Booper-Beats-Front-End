@@ -17,10 +17,12 @@ components:
       properties: {text: Supreme Pizza($13.00)}
       type: Button
       layout_properties: {grid_position: 'WDFCPI,AZONVZ'}
+      event_bindings: {click: button_1_click}
     - name: button_2
       properties: {text: Shirley Temple ($4.00)}
       type: Button
       layout_properties: {grid_position: 'WDFCPI,DVRIDR'}
+      event_bindings: {click: button_2_click}
 - name: label_1
   properties: {text: specials}
   type: Label

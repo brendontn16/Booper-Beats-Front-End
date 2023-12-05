@@ -71,3 +71,23 @@ class Beverages(BeveragesTemplate):
     # from the Order receipt itself 
     #alert(content = event_args, title = "Item Quanity", large = False, buttons = [("-1", --milk),("+1",++milk)])
     #pass
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    alert(content= "confirm order?", title= "order confirmation", buttons = [("yes"),("no")])
+    pass
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    alert(content= "confirm order?", title= "order confirmation", buttons = [("yes"),("no")])
+    pass
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    alert(content= "confirm order?", title= "order confirmation", buttons = [("yes"),("no")])
+    pass
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    alert(content= "confirm order?", title= "order confirmation", buttons = [("yes"),("no")])
+    pass

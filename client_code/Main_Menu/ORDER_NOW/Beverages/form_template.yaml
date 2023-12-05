@@ -25,15 +25,19 @@ components:
     properties: {text: Coke($2.50)}
     type: Button
     layout_properties: {grid_position: 'EVHKRG,HINAHR WEKIRO,SHOWER'}
+    event_bindings: {click: button_1_click}
   - name: button_4
     properties: {text: Water($1.00)}
     type: Button
     layout_properties: {grid_position: 'EVHKRG,HINAHR VBFTFV,IODAGO'}
+    event_bindings: {click: button_4_click}
   - name: button_2
     properties: {text: Tea($2.00)}
     type: Button
     layout_properties: {grid_position: 'EVHKRG,JKWRVM RZDQZK,QIUFVZ'}
+    event_bindings: {click: button_2_click}
   - name: button_3
     properties: {text: Lemonade($1.50)}
     type: Button
     layout_properties: {grid_position: 'EVHKRG,JKWRVM PKYACR,TOQWNA'}
+    event_bindings: {click: button_3_click}
