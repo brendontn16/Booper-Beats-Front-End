@@ -5,74 +5,40 @@ container:
 components:
 - type: ColumnPanel
   properties: {}
-  name: content_panel
   layout_properties: {slot: default}
+  name: content_panel
   components:
-  - name: card_1
-    properties: {role: card, col_widths: '{"KKTVFC":35,"BXBLFW":25,"WPDHDR":15,"QXWEBC":15,"VJDZML":30}'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'CLLZJY,GGMIIM'}
-    components:
-    - name: button_1
-      properties: {text: Water}
-      type: Button
-      layout_properties: {grid_position: 'FNGFQI,WPDHDR KOXSNH,QDICUP'}
-      event_bindings: {click: button_1_click}
-    - name: button_2
-      properties: {text: Mug}
-      type: Button
-      layout_properties: {grid_position: 'FNGFQI,WPDHDR'}
-    - name: button_8
-      properties: {text: Pepsi}
-      type: Button
-      layout_properties: {grid_position: 'FNGFQI,QXWEBC PWRCOE,GXABUH'}
-    - name: button_10
-      properties: {text: Minute Maid}
-      type: Button
-      layout_properties: {grid_position: 'FNGFQI,QXWEBC JLNJLZ,NSKBAI'}
-    - name: button_9
-      properties: {text: Sprite}
-      type: Button
-      layout_properties: {grid_position: 'FNGFQI,VJDZML OGIZVP,KKTVFC WRPZHP,FZKLMU'}
-    - name: button_11
-      properties: {text: Tea}
-      type: Button
-      layout_properties: {grid_position: 'FNGFQI,VJDZML OGIZVP,KKTVFC PHUSPT,KAIBKX'}
-    - name: button_3
-      properties: {text: Dr. Pepper}
-      type: Button
-      layout_properties: {grid_position: 'FNGFQI,VJDZML OGIZVP,BXBLFW QTSGWU,GBRIGB'}
-    - name: button_12
-      properties: {text: Beer}
-      type: Button
-      layout_properties: {grid_position: 'FNGFQI,VJDZML OGIZVP,BXBLFW FQKRNW,SHKZWN'}
-  - name: card_3
-    properties: {role: card}
+  - properties: {background: '', foreground: '', role: null}
+    type: GridPanel
+    layout_properties: {grid_position: 'SSVLGZ,YUYAIM'}
+    name: drink_menu
+  - properties: {role: card}
     type: ColumnPanel
     layout_properties: {grid_position: 'TTRNVQ,XHTVAX'}
+    name: card_3
     components:
-    - name: button_5
-      properties: {text: '', icon: 'fa:fast-backward'}
+    - properties: {text: '', icon: 'fa:fast-backward'}
       type: Button
       layout_properties: {grid_position: 'WYVSDS,UESHWQ'}
-    - name: button_4
-      properties: {text: '', icon: 'fa:play-circle'}
+      name: button_5
+    - properties: {text: '', icon: 'fa:play-circle'}
       type: Button
       layout_properties: {grid_position: 'WYVSDS,NRJHVQ'}
-    - name: button_6
-      properties: {text: '', icon: 'fa:fast-forward'}
+      name: button_4
+    - properties: {text: '', icon: 'fa:fast-forward'}
       type: Button
       layout_properties: {grid_position: 'WYVSDS,CWOSWU'}
-- name: label_1
-  properties: {text: BEverages}
+      name: button_6
+- properties: {text: BEverages}
   type: Label
   layout_properties: {slot: title}
-- name: button_7
-  properties: {text: '', icon: 'fa:shopping-cart'}
+  name: label_1
+- properties: {text: '', icon: 'fa:shopping-cart'}
   type: Button
   layout_properties: {slot: nav-right}
-- name: button_11_copy
-  properties: {text: BACK, bold: true}
+  name: button_7
+- properties: {text: BACK, bold: true}
   type: Button
   layout_properties: {slot: sidebar}
   event_bindings: {click: button_11_click}
+  name: button_11_copy
