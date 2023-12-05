@@ -143,3 +143,8 @@ class MusicPlayer(MusicPlayerTemplate):
     iframe = jQuery("<iframe width='100%' height='800px'>").attr("src","http://127.0.0.1:5000/")
     iframe.appendTo(get_dom_node(self.content_panel))
     pass
+
+  def back_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Main_Menu')
+    pass
