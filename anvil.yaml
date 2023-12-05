@@ -2,7 +2,7 @@ allow_embedding: false
 package_name: Classic_2
 db_schema:
   customfoodmenu:
-    client: none
+    client: search
     server: full
     columns:
     - name: Food Type
