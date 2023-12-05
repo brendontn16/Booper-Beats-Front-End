@@ -4,6 +4,8 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
+from anvil.js.window import jQuery
+from anvil.js import get_dom_node
 
 
 class MusicPlayer(MusicPlayerTemplate):
@@ -12,35 +14,7 @@ class MusicPlayer(MusicPlayerTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-  def card_9_show(self, **event_args):
-    self.card_9.visible = True
-    """This method is called when the column panel is shown on the screen"""
-    pass
-  def card_9_hide(self, **event_args):
-    """This method is called when the column panel is removed from the screen"""
-    self.card_9.visible = False
-    pass
 
-  def card_8_show(self, **event_args):
-    """This method is called when the column panel is shown on the screen"""
-    self.card_8.visible = True
-    pass
-
-  def card_8_hide(self, **event_args):
-    self.card_8.visible = False
-    """This method is called when the column panel is removed from the screen"""
-    pass
-    
-  def card_7_show(self, **event_args):
-    """This method is called when the column panel is shown on the screen"""
-    self.card_7.visible = True
-    pass
-
-  def card_7_hide(self, **event_args):
-    self.card_7.visible = False
-    """This method is called when the column panel is removed from the screen"""
-    pass
-    
 
     # Any code you write here will run before the form opens.
 
@@ -48,10 +22,6 @@ class MusicPlayer(MusicPlayerTemplate):
     """This method is called when the button is clicked"""
     open_form('Main_Menu.ORDER_NOW.Create_A_Pizza')
     pass
-    
-  
-
-
   def reset_btn_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('Main_Menu')
@@ -63,37 +33,7 @@ class MusicPlayer(MusicPlayerTemplate):
     def button_playlist2(self, **event_args):
         result = anvil.server.call('play_preselected_playlist', self.spotify, "spotify:playlist:3P2XUd8YlIQYCA6rECPGeN", shuffle=True)
         self.label_1.text = result
-  def button_12_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    self.card_9_hide()
-    self.card_7_hide()
-    self.card_8_show()
-    pass
-
-  def button_13_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    self.card_9_show()
-    self.card_8_hide()
-    self.card_7_hide()
-    pass
-
-  def button_11_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    self.card_7_show()
-    self.card_8_hide()
-    self.card_9_hide()
-    pass
-
-  def button_14_click(self, **event_args):
-    self.card_7_show()
-    self.card_8_show()
-    self.card_9_show()
-    """This method is called when the button is clicked"""
-    pass
-
-  def Music_pressed_enter(self, **event_args):
-    """This method is called when the user presses Enter in this text box"""
-    pass
+  
 
 
     def button_playlist3(self, **event_args):
@@ -137,5 +77,16 @@ class MusicPlayer(MusicPlayerTemplate):
         self.close()
 
   def button_Search_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    iframe = jQuery("<iframe width='100%' height='800px'>").attr("src","http://127.0.0.1:5000/")
+    iframe.appendTo(get_dom_node(self.content_panel))
+    pass
+
+  def back_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Main_Menu')
+    pass
+
+  def button_7_click(self, **event_args):
     """This method is called when the button is clicked"""
     pass

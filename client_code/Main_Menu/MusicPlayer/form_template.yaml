@@ -8,126 +8,21 @@ components:
   layout_properties: {slot: default}
   name: content_panel
   components:
-  - properties: {role: card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'ESBNME,IIPCMQ RTLKNQ,XDJGKO'}
-    name: card_2
-    components:
-    - properties: {}
-      type: TextBox
-      layout_properties: {grid_position: 'EEAVRH,OZJUOV'}
-      event_bindings: {pressed_enter: Music_pressed_enter}
-      name: Music
-    - properties: {text: 'search :)'}
-      type: Button
-      layout_properties: {grid_position: 'EEAVRH,IMKYXY'}
-      name: button_Search
-      event_bindings: {click: button_Search_click}
   - properties: {source: _/theme/Untitled (1).png}
     type: Image
-    layout_properties: {grid_position: 'ESBNME,IIPCMQ TMXAHM,PDCZOY'}
+    layout_properties: {grid_position: 'ESBNME,IIPCMQ'}
     name: image_1
-  - properties: {role: card}
+  - properties: {role: card, col_widths: '{}', visible: true}
     type: ColumnPanel
-    layout_properties: {grid_position: 'ESBNME,RQCNHN XGKOSP,YMIKZJ'}
-    name: card_3
-    components:
-    - properties: {text: ALL}
-      type: Button
-      layout_properties: {grid_position: 'LLALTJ,PYDDGU'}
-      event_bindings: {click: button_14_click}
-      name: button_14
-    - properties: {text: Karaoke}
-      type: Button
-      layout_properties: {grid_position: 'EJEMON,ZCITXJ'}
-      event_bindings: {click: button_11_click}
-      name: button_11
-    - properties: {text: TOP 40s, enabled: true}
-      type: Button
-      layout_properties: {grid_position: 'EJEMON,YUNKKF'}
-      event_bindings: {click: button_12_click}
-      name: button_12
-    - properties: {text: Preset Playlist}
-      type: Button
-      layout_properties: {grid_position: 'EJEMON,OIFQRI'}
-      event_bindings: {click: button_13_click}
-      name: button_13
-  - properties: {role: card, col_widths: '{"ZNPOPX":20,"IOTWOQ":40,"SDECZS":30,"SBPHFZ":30,"WNYLJU":30,"BIAXRL":30}',
-      visible: false}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'ESBNME,RQCNHN UGTFRF,DJTTOK'}
+    layout_properties: {grid_position: 'ESBNME,RQCNHN'}
     event_bindings: {show: card_6_show, hide: card_6_hide}
     name: card_7
     components:
-    - properties: {text: Playlist1, align: full}
+    - properties: {text: Click here for the Playlist, visible: true}
       type: Button
-      layout_properties: {grid_position: 'VKVGPY,KZZLNX'}
-      event_bindings: {click: button_1_click}
-      name: button_playlist1
-  - properties: {role: card, col_widths: '{"ZNPOPX":20,"IOTWOQ":40,"SDECZS":30,"SBPHFZ":30,"WNYLJU":30,"BIAXRL":30}',
-      visible: false}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'ESBNME,RQCNHN JTWULP,OIEYYN'}
-    event_bindings: {show: card_9_show, hide: card_9_hide}
-    name: card_9
-    components:
-    - properties: {text: Playlist2, align: full}
-      type: Button
-      layout_properties: {grid_position: 'ITTNMW,QTFRAX'}
-      name: button_playlist2
-  - properties: {role: card, col_widths: '{"ZNPOPX":20,"IOTWOQ":40,"SDECZS":30,"SBPHFZ":30,"WNYLJU":30,"BIAXRL":30}',
-      visible: false}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'ESBNME,RQCNHN XWHYHR,UOOLMA'}
-    event_bindings: {show: card_0_show, hide: card_0_hide}
-    name: card_8
-    components:
-    - properties: {text: Playlist3, align: full}
-      type: Button
-      layout_properties: {grid_position: 'TSFOAX,TOFSGM'}
-      name: button_playlist3
-    - properties: {text: button_1, visible: true}
-      type: Button
-      layout_properties: {grid_position: 'GSROXV,ZNPOPX ZUIWXS,NIORXI'}
-      event_bindings: {click: button_1_click}
-      name: button_1
-    - properties: {text: button_4}
-      type: Button
-      layout_properties: {grid_position: 'GSROXV,ZNPOPX XYEIJA,FOQVCB'}
-      name: button_4
-    - properties: {text: button_2}
-      type: Button
-      layout_properties: {grid_position: 'GSROXV,IOTWOQ WWAQRY,SDECZS'}
-      name: button_2
-    - properties: {text: button_5}
-      type: Button
-      layout_properties: {grid_position: 'GSROXV,IOTWOQ WWAQRY,SBPHFZ'}
-      name: button_5
-    - properties: {text: button_3}
-      type: Button
-      layout_properties: {grid_position: 'GSROXV,IOTWOQ UYFACH,WNYLJU'}
-      name: button_3
-    - properties: {text: button_6}
-      type: Button
-      layout_properties: {grid_position: 'SINCGL,OPHCHA GSROXV,IOTWOQ UYFACH,BIAXRL'}
-      name: button_6
-  - properties: {role: card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'XQCBOA,JSNXPF'}
-    name: card_4
-    components:
-    - properties: {text: '', icon: 'fa:fast-backward'}
-      type: Button
-      layout_properties: {grid_position: 'PTNANP,EPXBKD'}
-      name: button_previous_click
-    - properties: {text: '', icon: 'fa:play-circle', align: center}
-      type: Button
-      layout_properties: {grid_position: 'PTNANP,IENXGN'}
-      name: button_play_pause_click
-    - properties: {text: '', icon: 'fa:fast-forward'}
-      type: Button
-      layout_properties: {grid_position: 'PTNANP,MZCWGA'}
-      name: button_next_click
+      layout_properties: {grid_position: 'VQLROU,DPFDEZ'}
+      name: button_Search
+      event_bindings: {click: button_Search_click}
 - properties: {text: BooperBeats}
   type: Label
   layout_properties: {slot: title}
@@ -136,7 +31,8 @@ components:
   type: Button
   layout_properties: {slot: nav-right}
   name: button_7
-- properties: {text: button_11}
+  event_bindings: {click: button_7_click}
+- properties: {text: BACK}
   type: Button
   layout_properties: {slot: sidebar}
   event_bindings: {click: back_click}
