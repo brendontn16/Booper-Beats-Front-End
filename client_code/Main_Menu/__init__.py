@@ -1,5 +1,8 @@
 from ._anvil_designer import Main_MenuTemplate
 from anvil import *
+import anvil.tables as tables
+import anvil.tables.query as q
+from anvil.tables import app_tables
 import anvil.server
 
 class Main_Menu(Main_MenuTemplate):
