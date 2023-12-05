@@ -7,7 +7,7 @@ import anvil.server
 
 
 class MusicPlayer(MusicPlayerTemplate):
-
+  
   def __init__(self, **properties):
     self.init_components(**properties)
   def card_9_show(self, **event_args):
