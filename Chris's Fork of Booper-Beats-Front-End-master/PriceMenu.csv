@@ -1,0 +1,13 @@
+"ID","ItemPrice Key","Menu Type","Food Item Type","Description","Price"
+"[555840,873579634]",1,"Pizza","Custom Pizza","Basic Pizza",9
+"[555840,873579679]",2,"Pizza","Custom Pizza","Loaded Pizza",11
+"[555840,873579723]",3,"Pizza","Custom Pizza","Specialty Pizza",10
+"[555840,873579753]",4,"Burger","Custom Burger","Basic Burger",7
+"[555840,873579806]",5,"Burger","Custom Burger","Fully Stacked Burger",8.5
+"[555840,873579865]",6,"Burger","Custom Burger","Specialty Burger",7.5
+"[555840,873579904]",7,"Drinks","Tea","""a certain uncle would be proud""",4
+"[555840,873579949]",8,"Drinks","Soda","""Free Refills""",2.25
+"[555840,873580003]",9,"Drinks","Float","Soda Floats",4.25
+"[555840,873580231]",10,"Drinks","Juice","Fruity",2.25
+"[555840,873580302]",11,"Desserts","Ice Cream","""Time for a party""",3.5
+"[555840,873580400]",12,"Desserts","Pie","""You heard me, Jimbo. It has pie""",4

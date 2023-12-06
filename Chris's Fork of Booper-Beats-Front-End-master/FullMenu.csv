@@ -1,0 +1,23 @@
+"ID","Food_Item_Key","Menu_Type","Food_Item_Type","Specific_Item","Description","Extra_Cost"
+"[555463,872521811]",1,"Pizza","Custom Pizza","Basic Pizza","0  to 3 Toppings",0
+"[555463,872521815]",2,"Pizza","Custom Pizza","Loaded Pizza","4 or more Toppings",0
+"[555463,872521817]",3,"Pizza","Custom Pizza","Specialty Pizza","""one of our go-to pizzas""",0
+"[555463,872521818]",4,"Burger","Custom Burger","Basic Burger","0 to 5 Toppings",0
+"[555463,872521819]",5,"Burger","Custom Burger","Fully Stacked Burger","6 or more Toppings",0
+"[555463,872521820]",6,"Burger","Custom Burger","Specialty Burger","""one of our go-to Burgers""",0
+"[555463,872521821]",7,"Drinks","Tea","Iced Tea","""cold and refreshing""",0
+"[555463,872521824]",8,"Drinks","Tea","Earl Grey Tea","""hot and calming""",0
+"[555463,872521825]",9,"Drinks","Tea","Boba Tea","""Bubble your yum""",0
+"[555463,872521826]",10,"Drinks","Soda","Cola","""Suuuuper!""",0
+"[555463,872521827]",11,"Drinks","Soda","Root Beer","""heavy on the root""",0
+"[555463,872521828]",12,"Drinks","Soda","Ginger Ale","""What 'Ales' you?""",0
+"[555463,872521831]",13,"Drinks","Soda","Orange Soda","""Orange you glad?""",0
+"[555463,872521834]",14,"Drinks","Float","Root Beer Float","""the classic""",0
+"[555463,872521841]",15,"Drinks","Float","Cola Float","""the basic""",0
+"[555463,872521842]",16,"Drinks","Float","Orange Float","""the creamsicle"" ",0
+"[555463,872521846]",17,"Drinks","Juice","Lemonade","""when gives you lemons""",0
+"[555463,872521849]",18,"Desserts","Ice Cream","Vanilla Ice Cream","""the vanilla experience""",0
+"[555463,872521894]",19,"Desserts","Ice Cream","Chocolate Ice Cream","""debatably better than chocolate milk""",0
+"[555463,872521895]",20,"Desserts","Ice Cream","Ice Cream Sundae","""the works""",1.5
+"[555463,872521936]",21,"Desserts","Pie","Apple Pie","""How American is it really?""",0
+"[555463,872521938]",22,"Desserts","Pie","Cherry Pie","""Love it or Hate it""",0
