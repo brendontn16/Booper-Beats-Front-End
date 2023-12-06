@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booper Beats</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+h1, h2 {
+    color: #673AB7;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #673AB7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #311B92;
+}
+
+#current-info {
+    margin-top: 20px;
+}
+
+#album-art {
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#progress-bar {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ddd;
+    height: 20px;
+    position: relative;
+}
+
+#progress {
+    height: 100%;
+    background-color: #673AB7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+
+#progress-bar::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(to right, #673AB7, transparent);
+}
+
+#progress-bar:hover::before {
+    background: linear-gradient(to right, #311B92, transparent);
+}
+    </style>
+</head>
+<body>
+    <h1>Booper Beats</h1>
+    
+    <h2>Playlists</h2>
+    <button onclick="playPlaylist(1)">Play Playlist 1</button>
+    <button onclick="playPlaylist(2)">Play Playlist 2</button>
+    <button onclick="playPlaylist(3)">Play Playlist 3</button>
+
+    <h2>Playback Controls</h2>
+    <button onclick="controlPlayback('play')">Play</button>
+    <button onclick="controlPlayback('pause')">Pause</button>
+    <button onclick="controlPlayback('next')">Next</button>
+    <button onclick="controlPlayback('previous')">Previous</button>
+
+    <div id="current-info">
+        <h2>Currently Playing</h2>
+        <p id="current-playlist"></p>
+        <p id="current-track"></p>
+        <img id="album-art" src="" alt="Album Artwork">
+    </div>
+
+    <div id="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+    <script>
+        function updateCurrentInfo() {
+            fetch('/get_information')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('current-playlist').textContent = `Playlist: ${data.current_playlist}`;
+                    document.getElementById('current-track').textContent = `Track: ${data.current_track}`;
+                    document.getElementById('album-art').src = data.current_artwork;
+
+                    // Update progress bar
+                    if (data.progress_percentage !== null) {
+                        document.getElementById('progress').style.width = `${data.progress_percentage}%`;
+                    }
+                });
+        }
+
+        function playPlaylist(playlistNumber) {
+            fetch(`/play_playlist/${playlistNumber}`)
+                .then(response => response.text())
+                .then(data => alert(data));
+        }
+
+        function controlPlayback(action) {
+            fetch(`/control_playback/${action}`)
+                .then(response => response.text())
+                .then(data => alert(data));
+        }
+
+        function updateCurrentInfo() {
+        fetch('/get_information')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('current-playlist').textContent = `Playlist: ${data.current_playlist}`;
+                document.getElementById('current-track').textContent = `Track: ${data.current_track}`;
+                document.getElementById('album-art').src = data.current_artwork;
+
+                // Update progress bar
+                if (data.progress_percentage !== null) {
+                    document.getElementById('progress').style.width = `${data.progress_percentage}%`;
+                }
+            });
+    }
+
+    // Update current information on page load
+    updateCurrentInfo();
+
+    // Polling to update information every 1000 milliseconds (1 second)
+    setInterval(updateCurrentInfo, 1000);
+    </script>
+</body>
+</html>
