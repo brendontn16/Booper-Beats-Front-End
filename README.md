@@ -89,7 +89,10 @@ If you want to get to the basics as quickly as possible, each section of this do
 
 # SERVER EXECUTION
 Step 1: Download the MUSIC_SECTION_BOOPERBEATS
+
 Step 2: Run app.py in a terminal.
-Step 3: Search https://localhost:5000
+
+Step 3: Search https://localhost:5000.
+
 Step 4: Input premium account information when prompted
 
