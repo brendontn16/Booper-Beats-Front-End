@@ -86,3 +86,10 @@ Anvil has tutorials on:
 The Anvil reference documentation provides comprehensive information on how to use Anvil to build web applications. You can find the documentation [here](https://anvil.works/docs/overview?utm_source=github:app_README).
 
 If you want to get to the basics as quickly as possible, each section of this documentation features a [Quick-Start Guide](https://anvil.works/docs/overview/quickstarts?utm_source=github:app_README).
+
+# SERVER EXECUTION
+Step 1: Download the MUSIC_SECTION_BOOPERBEATS
+Step 2: Run app.py in a terminal.
+Step 3: Search https://localhost:5000
+Step 4: Input premium account information when prompted
+
